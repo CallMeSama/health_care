@@ -4,6 +4,10 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { AccueillComponent } from './accueill/accueill.component';
 import { HeaderComponent } from './header/header.component';
+import { ListePatientComponent } from './patient/liste-patient/liste-patient.component';
+import { AjouterPatientComponent } from './patient/ajouter-patient/ajouter-patient.component';
+import { ListeRvComponent } from './rendez_vous/liste-rv/liste-rv.component';
+import { AjouterRvComponent } from './rendez_vous/ajouter-rv/ajouter-rv.component';
 
 const routes: Routes = [
   {
@@ -31,6 +35,22 @@ const routes: Routes = [
   {
     path: 'header',
     component: HeaderComponent,
+  },
+  {
+    path: 'liste-patient',
+    component: ListePatientComponent,
+  },
+  {
+    path: 'ajouter-patient',
+    component: AjouterPatientComponent,
+  },
+  {
+    path: 'liste-rv',
+    component: ListeRvComponent,
+  },
+  {
+    path: 'ajouter-rv',
+    component: AjouterRvComponent,
   },
 ];
 

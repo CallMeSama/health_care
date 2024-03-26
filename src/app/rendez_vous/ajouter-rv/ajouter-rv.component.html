@@ -1,1 +1,87 @@
-<p>ajouter-rv works!</p>
+<div class="header">
+    <app-header></app-header>
+</div>
+<div class="main-container vh-100 d-flex flex-column">
+    <div class="side-nav">
+        <app-side-nav></app-side-nav>
+    </div>
+    <div class="main flex-grow-1">
+        <div class="container-fluid h-100">
+            <a class="button-return" href="/liste-rv">Précédent</a>
+
+            <div class="row h-100 d-flex justify-content-center align-items-center">
+                <div class="">
+                    <div class="h-100">
+                        <form class="form-card h-100 d-flex flex-column justify-content-center">
+                            <div class="row">
+                                <!-- Les champs du formulaire vont ici -->
+                                <br>
+                                <div class="form-group t flex-column">
+                                    <label>Spécialité :</label>
+                                    <select class="form-select form-select-sm" aria-label="Small select example">
+                                        <option value="Monsieur">Ophtalmologie</option>
+                                        <option value="Madame">Gynécologie</option>
+                                        <option value="Mademoiselle">Cardiologie</option>
+                                        <option value="Mademoiselle">Radiologie</option>
+                                        <option value="Mademoiselle">Pédiatrie</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="form-group t flex-column">
+                                    <label>Medecin :</label>
+                                    <select class="form-select form-select-sm" aria-label="Small select example">
+                                        <option value="Monsieur">Dr Awa Sokhna</option>
+                                        <option value="Madame">Dr Dibor Diouf</option>
+                                        <option value="Mademoiselle">Dr Abdou Kane</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label>Nom du patient :</label>
+                                    <input type="text" id="email">
+                                </div> <br>
+                                <div class="form-group t flex-column">
+                                    <label>Sexe</label>
+                                    <select class="form-select form-select-sm" aria-label="Small select example">
+                                        <option value="Monsieur">Homme</option>
+                                        <option value="Madame">Femme</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label>Age :</label>
+                                    <input type="number" id="numero">
+                                </div> <br>
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label>Numero du patient :</label>
+                                    <input type="number" id="numero">
+                                </div>
+                                <br>
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label for="date">Date du rendez-vous :</label>
+                                    <input type="date" class="form-control" id="date" name="date">
+                                </div> <br>
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label for="heure">Heure du rendez-vous :</label>
+                                    <input type="time" class="form-control" id="heure" name="heure">
+                                </div>
+                                <br>
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label for="date">Modif : </label>
+                                    <input type="text" class="form-control" id="motif" name="motif">
+                                </div>
+                                <br>
+                            </div>
+                            <div class="d-flex justify-content-around">
+                                <button type="submit" class="btn btn-outline-success"
+                                    routerLink="/liste-rv">Enregistrer</button>
+                                <button type="button" class="btn btn-outline-danger"
+                                    routerLink="/liste-rv">Annuler</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

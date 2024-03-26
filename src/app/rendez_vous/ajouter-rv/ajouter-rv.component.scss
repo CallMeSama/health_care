@@ -1,0 +1,111 @@
+.main-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #f7f4f4;
+  }
+  .main{
+    width: 700px;
+    padding: 0 5%;
+    justify-content: center;
+    backface-visibility: visible;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+  .container-fluid {
+    flex-direction: row;
+    justify-content: space-between;
+    padding:10px;
+  }
+  
+  .alert-success {
+    top: 20px;
+    display: flex;
+    height: min-content;
+}
+
+.fs {
+    color: rgb(85, 138, 7);
+    font-weight: bold;
+    display: flex;
+}
+label{
+  margin-right: 20px;
+   font-size: 15px;
+}
+
+input, textarea, button, select{
+    padding: 5px 5px;
+    width: 50vh;
+    border-radius: 5px !important;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 15px !important;
+    height: 30px;
+}
+input:focus, textarea:focus, select:focus{
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid rgb(85, 138, 7);
+    outline-width: 0;
+    font-weight: 400
+}
+.f8 {
+    color: rgb(85, 138, 7);
+    font-weight: bold;
+}
+.card {
+    padding: 40px;
+    text-align: center;
+}
+
+.btn {
+    width: 120px;
+    height: 40px;
+    padding: 3px 3px 3px 3px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.btn-outline-danger {
+    position: relative;
+    left: 25px;
+}
+.btn-primary {
+    background-color: rgb(131, 125, 125);
+}
+
+.button-return {
+    background: #fff;;
+    border: none;
+    padding: 5px 25px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    place-items: center; //place le text au milieu
+    text-decoration: none;
+    color: blue;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+    border-style:solid
+    
+}
+.button-return:hover {
+    background-color: rgb(212, 238, 249);
+    color: black;
+}
+.error-message {
+    display: flex;
+    font-size: 10px;
+    color: red;
+    font-weight: lighter;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.etoile{
+    color: red;
+}
+
